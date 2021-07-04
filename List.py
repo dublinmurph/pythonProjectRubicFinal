@@ -1,3 +1,4 @@
+# Import packages required for Data Extraction
 import pandas as pd
 
 # Import CSV as a Dataframe, index by Tournament Column

@@ -1,3 +1,4 @@
+# Import packages required for Data Extraction
 import pandas as pd
 from datetime import datetime
 import matplotlib.pyplot as plt
@@ -58,5 +59,5 @@ df['game_weekday'] = df['game_date'].dt.weekday
 
 # Chart showing the number of Games per Weekday
 df.groupby('game_weekday')['result'].count().plot(kind='bar')
-plt.title("Goals per Day of The Week")
+plt.title("Number of Games per Day")
 plt.show()
